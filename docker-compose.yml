@@ -1,0 +1,16 @@
+version: '3'
+services:
+  nginx: 
+    image: nginx:latest
+    container_name: proxy
+    ports:
+      - 8081:80
+  node_app:
+    image: ishau/nodeapp:latest
+    container_name: nodeapp
+    ports:
+      - 80:80
+
+   
+
+  
